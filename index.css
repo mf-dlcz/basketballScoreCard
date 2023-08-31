@@ -37,7 +37,7 @@ button {
     border: 1px solid #FEF3C7;
     background-color: transparent;
     color: #FEF3C7;
-    margin: 10px 3px;
+    margin: 15px 3px;
 }
 
 p,
@@ -60,4 +60,16 @@ p {
 
 .card {
     padding: 10px 15px;
+}
+
+.resetBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 13px;
+    transition-duration: 0.4s;
+    letter-spacing: 2px;
+}
+
+.resetBtn:after {
+    background-color: #065F46;
 }
