@@ -3,7 +3,6 @@
     src: url(CursedTimerUlil-Aznm.ttf);
 }
 
-
 body {
     margin: 0;
     text-align: center;
@@ -28,7 +27,7 @@ body {
 
 h3 {
     font-size: 40px;
-    padding: 5px;
+    padding: 10px 5px;
     margin: 10px;
 }
 
@@ -53,4 +52,12 @@ p {
     background-color: #374151;
     padding: 10px;
     color: #9F1239;
+}
+
+.title {
+    margin: 0;
+}
+
+.card {
+    padding: 10px 15px;
 }
