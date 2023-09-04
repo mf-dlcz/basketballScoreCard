@@ -13,14 +13,14 @@ body {
 .container {
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: baseline;
     background: linear-gradient(
         to right,
         #047857, 
         #10B981);
     color: #D1FAE5;
-    padding: 20px;
+    padding: 10px;
     width: 575px;
     height: 385px;
 }
@@ -56,10 +56,26 @@ p {
 
 .title {
     margin: 0;
+    text-shadow: 2px 2px 10px #A7F3D0;
+    transition: all 0.6s ease-in-out;
+    letter-spacing: 0.1em;
+    animation: flicker 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+		opacity: 0.7;
+		text-shadow: 2px 2px 10px #A7F3D0;
+	}
+	100% {
+		opacity: 2;
+		text-shadow: 2px 2px 20px #A7F3D0;
+	}
 }
 
 .card {
-    padding: 10px 15px;
+    padding: 10px 10px;
+    position: sticky;
 }
 
 .resetBtn {
@@ -70,3 +86,52 @@ p {
     letter-spacing: 2px;
 }
 
+.resetBtn:hover {
+    background: linear-gradient(
+        to top,
+        #059669,
+        #10B981
+        );
+}
+
+#basketballImg {
+    width: 130px;
+    padding: 0 auto;
+    margin: 0;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+#bounce {
+    top: -30px;
+    left: -55px;
+    position: absolute;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#bounce:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
