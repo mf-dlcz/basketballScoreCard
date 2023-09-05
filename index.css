@@ -23,6 +23,7 @@ body {
     padding: 15px;
     width: 575px;
     height: 385px;
+    border-radius: 5px;
 }
 
 h3 {
