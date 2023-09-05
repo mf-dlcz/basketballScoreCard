@@ -90,6 +90,7 @@ p {
 .resetBtn:hover,
 button:hover {
     color: #064E3B;
+    cursor: pointer;
     font-weight: bold;
     background: linear-gradient(
         to top,
