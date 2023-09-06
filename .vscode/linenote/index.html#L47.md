@@ -1,5 +1,3 @@
-Notes!
-
 Use classname > classname {
   flex: 1; 
 }
