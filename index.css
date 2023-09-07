@@ -6,26 +6,34 @@
 body {
     margin: 0;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, 
+                Geneva, 
+                Tahoma, 
+                sans-serif;
     background-color: #D1D5DB;
+    background: 
+        url(images/basketball.png),
+        linear-gradient(
+            to right,
+            #047857, 
+            #10B981)
+            ;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container {
     margin: 0 auto;
     display: flex;
-    background: linear-gradient(
-        to right,
-        #047857, 
-        #10B981);
     color: #D1FAE5;
-    padding: 0;
+    padding: 140px 140px 20px 140px;
     width: 575px;
     height: 385px;
     border-radius: 5px;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 52px;
     padding: 10px 5px;
     margin: 10px;
 }
@@ -73,16 +81,17 @@ p {
 }
 
 .card {
-    padding: 10px 50px;
+    padding: 10px 40px;
     flex: 1;
 }
 
 .resetBtn {
     display: block;
     margin: 0 auto;
-    padding: 10px 13px;
+    padding: 15px 20px;
     transition-duration: 0.4s;
     letter-spacing: 2px;
+font-size: 20px
 }
 
 .resetBtn:hover,
