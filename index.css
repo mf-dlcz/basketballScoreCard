@@ -4,20 +4,20 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     font-family: Verdana, 
                 Geneva, 
                 Tahoma, 
                 sans-serif;
-    background-color: #D1D5DB;
     background: 
-        url(images/basketball.png),
+        url(images/basketball-ball-variant.png),
         linear-gradient(
             to right,
             #047857, 
             #10B981)
             ;
+    max-width: 1200px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -91,7 +91,7 @@ p {
     padding: 15px 20px;
     transition-duration: 0.4s;
     letter-spacing: 2px;
-font-size: 20px
+    font-size: 20px
 }
 
 .resetBtn:hover,
