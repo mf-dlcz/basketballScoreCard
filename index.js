@@ -6,10 +6,14 @@ let guestScore = document.getElementById("guestScore");
 let homeScoreCount = 0;
 let guestScoreCount = 0;
 
-const addScore = () => {
-
-  homeScore.textContent = homeScoreCount;
-  guestScore.textContent = guestScoreCount;
+const addScore = (points, isHome) => {
+  if(isHome) {
+    homeScoreCount += points;
+    homeScore.textContent = homeScoreCount;
+  } else {
+    guestScoreCount += points;
+    guestScore.textContent = guestScoreCount;
+  }
 }
 
 
